@@ -1,0 +1,135 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 7, 2014, 4:19:28 PM
+    Author     : thanhhn
+*/
+
+/*
+    FOOTER
+*/
+
+#footer_wrapper{
+    width: 100%;   
+    background: #EDEDED;
+    position: relative;
+}
+
+#footer{
+    width:1060px;
+    margin: auto;
+    position: relative;
+    min-height: 120px;
+    padding-top: 15px;
+}
+
+#footer #bottom_menu{
+    margin: 0px 0px 0px 0px;
+    list-style: none;
+    /*width: 60%;*/
+    width: 70%;
+    padding: 0px 0px 0px 0px;
+    display: inline-block;
+}
+
+#footer #bottom_menu li{
+    float: left;
+    margin: 0px 0px 0px 0px;
+    font-family: arial;
+    /*padding: 2% 5% 2% 0%;*/
+    padding: 2% 3% 2% 0%;
+    font-size: 16px;
+    text-align: left;
+
+}
+
+#footer #bottom_menu li a{  
+    text-decoration: none;
+    color: #4C4C4C;
+}
+
+#footer #bottom_menu li a:hover{  
+    color: #FF6600;
+}
+
+#footer #copyright_wrapper{
+    width: 30%;
+    margin: 1% 0% 0% 0%;
+    border-right: 1px solid #C9C9C9;
+    padding: 0% 0% 0% 0%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+#footer #copyright_wrapper #copyright{
+    font-family: Roboto;
+    font-size: 13px;
+    color: #535353;
+    vertical-align: text-top;
+    display: inline;
+    line-height: 19px;
+    /*float: left*/
+}
+
+
+#footer #copyright_wrapper #license{
+    font-family: Roboto;
+    font-size: 13px;
+    color: #897E7E;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+#footer #quick_call{
+    width:40%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1% 0% 0% 2%;
+    margin-bottom: 10px;
+}
+
+#footer #quick_call p{
+    vertical-align: text-top;
+    font-family: arial;
+    font-size: 13px;
+    color: #575C6B;
+    display: inline;
+    line-height: 19px;
+    text-align: center;
+}
+
+#footer #other_services{
+    position: absolute;
+    top: 28px;
+    right: 0%;  
+    font-family: Roboto;
+    font-size: 14px;
+    color: #6F6F6F;
+    width: 20%;
+    margin:0px 0px 0px 0px;
+    text-align: right;
+}
+
+#footer #other_services p{
+    display:inline;
+}
+
+#footer #other_services select{
+    font-family: Roboto;
+    color: #6F6F6F;
+    font-size: 14px;
+    width: 82%;
+    margin: 5% 0% 0% 0%;
+    padding: 2% 2% 2% 2%;
+}
+.so_logo{
+    position: absolute;
+    margin-left: 5px;
+}
+.yahoo{
+    margin-left: 30px;
+}

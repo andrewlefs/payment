@@ -1,0 +1,507 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 7, 2014, 4:19:39 PM
+    Author     : thanhhn
+*/
+
+/*
+    HEADER
+*/
+#header{
+    width: 100%;
+}
+
+#header #top_panel_wrapper{
+    background: url("../images/toppanel_bg.png");
+    border-bottom: 1px solid #E8E8E8;
+    height: 38px;
+    position: relative;
+}
+
+#header #top_panel{
+    width: 1060px;
+    margin:auto;
+
+}
+
+#header #top_panel #game_list{
+    margin: auto auto auto auto;
+    font-size: 13px;
+    font-family: "arial";
+    color:#5C5C5C;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+}
+
+#header #top_panel #header_news{
+
+    height: 60%;
+    position: relative;
+    margin: 7px auto auto 1%;
+    padding: 0% 1% 0% 1%;
+    display:inline-block;
+    position: relative;
+}
+
+
+#header #top_panel #header_news img{
+    position: absolute;
+    height:100%;
+}
+
+#header #top_panel #header_news p{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: #5C5C5C;
+    height: 100%;   
+    padding: 0px 0px 0px 0px;
+    left: 15%;
+    line-height: 25px;
+    position: relative;
+    display:inline;
+}
+
+#reglog{
+    float: right;
+    margin: 0.5% auto auto 1%;
+    font-family: Roboto;
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: 100000;
+    margin-right: 11%;
+}
+
+#reglog .button{
+    font-size: 14px;
+    color: #5C5C5C;
+    font-family: "Roboto";
+    border: none;
+    text-decoration: none;
+    display: inline;
+    line-height: 28px;
+    margin-left: 18px;
+}
+a.username{
+    font-family: "Roboto-bold";
+}
+#reglog .button:hover{
+    color: #FF6600;
+}
+#header #middle_panel_wrapper{
+    width: 100%;
+    height: 50px;
+    padding-bottom: 17px;
+}
+
+#header #middle_panel{
+    width:1060px;
+    margin:auto;
+}
+
+#header #middle_panel #logo{
+    padding-top: 0.75%;
+}
+
+#header #middle_panel #top_menu{
+    float:right;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    min-width: 900px;
+    height:48px;
+    text-align: right;
+}
+
+#header #middle_panel #top_menu .top_menu_element{
+    display:inline-block;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 18px;
+    font-family: Roboto-Bold;
+    color: #5C5C5C;
+    /*padding: 26px 0% 0% 30px;*/
+    padding: 26px 0% 0% 20px;
+    text-align: right;
+    height: 40px;
+}
+
+
+#header #middle_panel #top_menu .top_menu_element a{
+    text-decoration: none;
+    color: #5C5C5C;
+}
+
+#header #middle_panel #top_menu .top_menu_element a.active,#header #middle_panel #top_menu .top_menu_element a:hover{
+    color: #FF6600;
+    border-top: 3px solid #FF6600;
+    padding-top: 20px;
+}
+
+
+
+#header #bottom_panel{
+    width:100%;
+    display:block;
+}
+
+/*-----------LOADING-------------*/
+#circularG{
+    position:relative;
+    width:25px;
+    height:25px}
+
+.circularG{
+    position:absolute;
+    background-color:#1291CC;
+    width:6px;
+    height:6px;
+    -moz-border-radius:4px;
+    -moz-animation-name:bounce_circularG;
+    -moz-animation-duration:0.56s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    -webkit-border-radius:4px;
+    -webkit-animation-name:bounce_circularG;
+    -webkit-animation-duration:0.56s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:linear;
+    -ms-border-radius:4px;
+    -ms-animation-name:bounce_circularG;
+    -ms-animation-duration:0.56s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    -o-border-radius:4px;
+    -o-animation-name:bounce_circularG;
+    -o-animation-duration:0.56s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:linear;
+    border-radius:4px;
+    animation-name:bounce_circularG;
+    animation-duration:0.56s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+}
+
+#circularG_1{
+    left:0;
+    top:10px;
+    -moz-animation-delay:0.21s;
+    -webkit-animation-delay:0.21s;
+    -ms-animation-delay:0.21s;
+    -o-animation-delay:0.21s;
+    animation-delay:0.21s;
+}
+
+#circularG_2{
+    left:3px;
+    top:3px;
+    -moz-animation-delay:0.28s;
+    -webkit-animation-delay:0.28s;
+    -ms-animation-delay:0.28s;
+    -o-animation-delay:0.28s;
+    animation-delay:0.28s;
+}
+
+#circularG_3{
+    top:0;
+    left:10px;
+    -moz-animation-delay:0.35s;
+    -webkit-animation-delay:0.35s;
+    -ms-animation-delay:0.35s;
+    -o-animation-delay:0.35s;
+    animation-delay:0.35s;
+}
+
+#circularG_4{
+    right:3px;
+    top:3px;
+    -moz-animation-delay:0.42s;
+    -webkit-animation-delay:0.42s;
+    -ms-animation-delay:0.42s;
+    -o-animation-delay:0.42s;
+    animation-delay:0.42s;
+}
+
+#circularG_5{
+    right:0;
+    top:10px;
+    -moz-animation-delay:0.49s;
+    -webkit-animation-delay:0.49s;
+    -ms-animation-delay:0.49s;
+    -o-animation-delay:0.49s;
+    animation-delay:0.49s;
+}
+
+#circularG_6{
+    right:3px;
+    bottom:3px;
+    -moz-animation-delay:0.56s;
+    -webkit-animation-delay:0.56s;
+    -ms-animation-delay:0.56s;
+    -o-animation-delay:0.56s;
+    animation-delay:0.56s;
+}
+
+#circularG_7{
+    left:10px;
+    bottom:0;
+    -moz-animation-delay:0.63s;
+    -webkit-animation-delay:0.63s;
+    -ms-animation-delay:0.63s;
+    -o-animation-delay:0.63s;
+    animation-delay:0.63s;
+}
+
+#circularG_8{
+    left:3px;
+    bottom:3px;
+    -moz-animation-delay:0.7s;
+    -webkit-animation-delay:0.7s;
+    -ms-animation-delay:0.7s;
+    -o-animation-delay:0.7s;
+    animation-delay:0.7s;
+}
+
+@-moz-keyframes bounce_circularG{
+    0%{
+    -moz-transform:scale(1)}
+
+100%{
+    -moz-transform:scale(.3)}
+
+}
+
+@-webkit-keyframes bounce_circularG{
+    0%{
+    -webkit-transform:scale(1)}
+
+100%{
+    -webkit-transform:scale(.3)}
+
+}
+
+@-ms-keyframes bounce_circularG{
+    0%{
+    -ms-transform:scale(1)}
+
+100%{
+    -ms-transform:scale(.3)}
+
+}
+
+@-o-keyframes bounce_circularG{
+    0%{
+    -o-transform:scale(1)}
+
+100%{
+    -o-transform:scale(.3)}
+
+}
+
+@keyframes bounce_circularG{
+    0%{
+    transform:scale(1)}
+
+100%{
+    transform:scale(.3)}
+
+}
+.hello{
+    margin-right: -17px;
+    font-family: Roboto;
+}
+.logout-nav{
+    color: #CBC4C4;
+    margin-right: 10px;
+}
+.logout-nav:hover{
+    color: #FF6600;
+}
+#header #top_panel #reglog .button strong{
+    font-family: 'Roboto-bold' ;
+}
+.nav-active{
+    color: #fff !important;
+    background: #FF6600 !important;
+    /*border-right: 1px solid #FF6600 !important;*/
+}
+div.nav{
+    float: left;
+    height: 39px;
+    margin: auto auto auto auto;
+    font-size: 13px;
+    font-family: "arial";
+    color:#5C5C5C;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+    padding-left: 25px;
+
+}
+div.nav .nav-title{
+    float: left;
+    margin-top: 5px;
+    width: 150px;
+    border-right: 1px solid #D6D6D6;
+    line-height: 30px;
+
+}
+div.nav:hover .nav-title{
+    border-right: 1px solid #FF6600 !important;
+    color: #fff;
+}
+.image{
+    background: url("../images/arrow_down.png") no-repeat right;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: 4px;
+    display: block;
+    margin-right: 10px;
+}
+.nav-title-active{
+    background: url("../images/arrow_down_hover.png") no-repeat right !important;
+    /*    border-right: 1px solid #FF6600 !important;*/
+}
+div.nav:hover .nav-content li{
+    color: #fff;
+}
+.nav-content{
+    display: block;
+    float: left;
+    position: absolute;
+    padding-left: 25px;
+    margin-top: 39px;
+    background: #fff;
+    border-left: 1px solid #D7D7D7;
+    border-right: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
+    padding: 10px;
+}
+
+/*style the main menu*/
+.myMenu {
+    margin:0;
+    padding:0;
+}
+
+.myMenu li {
+    list-style:none;
+    float:left;
+    font:12px Arial, Helvetica, sans-serif #111;
+    height: 40px;
+}
+
+.myMenu li a:link, .myMenu li a:visited {
+    display:block;
+    text-decoration:none;
+    /*background-color:#09F;*/
+    /*padding: 0.5em 2em;*/
+    margin:0;
+    border-right: 1px solid #fff;
+    color:#111;
+}
+
+.myMenu li a:hover {
+    /*background-color:#0CF;*/	
+}
+
+/*style the sub menu*/
+.myMenu li ul {
+    position:absolute;
+    visibility:hidden;
+    border-left: 1px solid #E2E2E2;
+    border-right: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    margin: 0;
+    margin-top: 39px;
+    margin-left: -25px;
+    background: #fff;
+    width: 545px;
+    padding: 10px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+.myMenu li ul li {
+    float: left;
+    padding: 5px;
+    width: 165px;
+    height: 20px !important;
+}
+
+.myMenu li ul li a:link, .myMenu li ul li a:visited {
+    color: #FF6600;
+    width:auto;
+}
+
+.myMenu li ul li a:hover {
+    color: #FF6600;
+}
+.myMenu li ul li img{
+    width: 20px;
+    border-radius: 3px;
+    position: absolute;
+}
+.nav-sub li span{
+    color: #646464;
+    text-transform: initial;
+    display: block;
+    margin-left: 25px;
+    line-height: 20px;
+}
+.nav-sub li span:hover{
+    color: #FF6600;
+}
+/*-------------tailm---------------------*/
+.top_menu_element{
+    position: relative;
+}
+#sub-menu{
+    position: absolute;
+    top: 59px;
+    left: 30px;
+    background: #fff;
+    width: 265px;
+    z-index: 9999;
+    padding-top: 7px;
+    background: #fff url("../images/direct3.png") no-repeat left 40px top;
+    
+     -webkit-box-shadow:0 3px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:0 3px 3px rgba(0, 0, 0, 0.1);
+    -o-box-shadow:0 3px 3px rgba(0, 0, 0, 0.1);
+    -khtml-box-shadow:0 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow:0 3px 3px rgba(0, 0, 0, 0.1);
+}
+#sub-menu li{
+    text-align: left;
+    border-top: #e7e7e7 solid 1px;
+}
+#sub-menu li:first-child{
+    border-top: #ff6600 solid 3px;
+}
+#sub-menu li a{
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    text-transform: none;
+    padding-left: 27px;
+    color: #767676!important;
+    font-weight: normal!important;
+    background: url("../images/direct1.png") no-repeat left 12px center;
+}
+#sub-menu li a:hover{
+    border: none!important;
+    padding-top: 0px!important;
+    color: #ff6600!important;
+    background: url("../images/direct2.png") no-repeat left 12px center;
+}

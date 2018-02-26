@@ -1,0 +1,1 @@
+<a class='logo' tabindex='-1' href='<?php echo base_url() ?>'><?php echo $this->config->item('title'); ?></a>

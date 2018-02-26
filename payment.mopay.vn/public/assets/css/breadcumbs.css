@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 9, 2014, 11:38:45 AM
+    Author     : thanhhn
+*/
+
+#content #breadcumbs{
+    border-bottom: 1px solid #E8E8E8;
+    height: 26px;
+    padding-top: 13px;
+}
+
+#content #breadcumbs span{  
+    padding: 0% 20px 0% 5px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #5C5C5C;
+}
+
+#content #breadcumbs span.not_end{
+    background: url("../images/breadcumbs.png") no-repeat center right;
+    background-size: 70% 70%;
+    margin-left: -5px;
+}

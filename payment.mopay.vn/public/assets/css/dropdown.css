@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 15, 2014, 3:01:49 PM
+    Author     : thanhhn
+*/
+
+/*
+    CUSTOM DROPDOWN WITH IMAGE
+*/
+
+.dropdown{
+    margin: 0px 0px 3% 0%;
+    width: 334px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 26px !important;
+    border: 1px solid #D3D3D3;
+    padding: 1% 2% 1% 6%;
+    display: inline;
+    position: relative;
+    background-size: 25px 25px !important;
+    color: #6E6E6E;
+    cursor: pointer;
+}
+
+.dropdown_item:hover{
+    cursor: pointer;
+    background: #F3F3F3;
+}
+
+.dropdown_trigger {
+    background: url('../images/arrow_down.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    float: right;
+    padding: 0px 0px 0px 0px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    margin: 0.75em auto auto auto;
+    position: relative;
+    right: 149px;
+    background-position: 0px 3px;
+}
+
+.dropdown_trigger:hover{
+    cursor: pointer;
+}
+
+.dropdown_wrapper{
+    position: absolute;
+    z-index: 61;
+    background: #fff;
+    width: 391px;
+    border: 1px solid #C6C6C6;
+    padding: 0% 0% 0% 0%;
+    max-height: 70%;
+    margin-left: 184px;
+    margin-top: -22px;
+}
+
+.dropdown_item {
+    list-style: none;
+    margin: auto auto auto 0%;
+    padding: 0% 0% 0% 10px;
+    width: 95%;
+    font-family: HelveticaNeue-Bold;
+    font-size: 14px;
+    color: #3B3939;   
+
+}
+
+.dropdown_item .dropdown_image{
+    width: 20px;
+    height: 20px;
+    padding: 13px 0% 2% 0%;
+}
+
+.dropdown_item .dropdown_value{
+    width:80% !important;
+    display: inline !important;
+    padding: 0% 0% 0% 1%;
+    margin: 0% 0% 0% 0%;
+    vertical-align: top;
+    color: #6B6B6B !important;
+    line-height: 45px !important;
+    cursor: pointer;
+}

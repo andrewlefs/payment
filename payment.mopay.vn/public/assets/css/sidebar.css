@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 7, 2014, 5:48:31 PM
+    Author     : thanhhn
+*/
+#sidebar{
+    width: 255px;
+    float:right;
+
+}
+
+
+#sidebar #account_info{
+    background: #FF6600;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: Roboto;
+    padding-bottom: 3%;    
+}
+
+#sidebar #account_info #account_name{
+    font-size: 18px;
+    padding: 4% 0% 0% 6%;
+    font-family: Roboto-Bold;
+    line-height: 25px;
+    width:95%;
+    margin-bottom: 5px;
+}
+
+#sidebar #account_info label{
+    vertical-align: text-top;
+    width: 30%;
+    display:inline-block;
+    padding: 0% 0% 0% 6%;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0px 0px 0px 0px;
+}
+
+#sidebar #account_info label.value{
+    vertical-align: text-top;
+    width: 60%;
+    padding: 0% 0% 0% 0%;
+    display:inline-block;
+    line-height: 30px;
+    margin: 0px 0px 0px 0px;
+}
+
+#sidebar .side_function{
+
+    border-left: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
+    background: #F8F8F8;
+    padding: 5% 4% 3% 6%;
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+}
+
+#sidebar .side_function img{
+}
+
+#sidebar .side_function label{
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    padding-left: 5%;
+    font-family: arial;
+    font-size: 14px;
+    line-height: 20px;
+    color: #989797;
+    cursor: pointer;
+    font-weight: bold;
+}
+#sidebar .side_function label:hover{
+    color: #FF6600;
+}
+#side_banner{
+    width: 100%; 
+    padding-top: 5%;
+}
+
+#side_banner img{
+    width: 100%;
+}
+#change-mcoin{
+    margin-top: 4px ;
+}
+.side_function_last{
+    border-radius: 0px 0px 5px 5px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.sidebar-balance{
+    margin-top: -7px;
+}
+.hr-sidebar{
+    width: 89%;
+    display: block;
+    height: 35px;
+    border-bottom: 1px solid #E6E6E6;
+    float: right;
+    margin-right: -12px;
+}

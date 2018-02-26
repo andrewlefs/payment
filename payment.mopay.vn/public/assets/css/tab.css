@@ -1,0 +1,269 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 9, 2014, 11:41:58 AM
+    Author     : thanhhn
+*/
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    border: 1px solid #DADADA;
+}
+
+.tab-links{
+    background: #05BAFE;
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+}
+
+
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+
+}
+
+.tab-links li {
+    list-style:none;
+    color: #fff;
+    //background: yellow;
+
+    //float:left;
+}
+
+.tab-links li a {
+    margin:0px 0px;
+    float:left;   
+    font-family: Roboto-Bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    padding: 1.5% 3% 1.5% 3%;
+    text-decoration:none;
+    
+}
+
+.tab-links li a:hover {
+    /*background:#fff;*/
+    color: #5C5C5C;
+    /*color: #F60;*/
+    cursor: pointer;
+    
+}
+
+.tab-links li.active a,.tab-links li.active a:hover {
+    background:#fff;
+    color: #5C5C5C;
+}
+
+.tab-content {
+    padding:0px 0px 0px 2%;
+    border-radius:3px;
+    background:#fff;
+    font-family: Roboto;
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+}
+
+
+
+/*
+    TAB LINK - TYPE 2
+*/
+.tabs-2 {
+    width:100%;
+    border-left: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+}
+
+.tab-2-links{
+    // background: #fff;
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.tab-2-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.tab-2-links li {
+    list-style:none;
+    padding: 0% 3% 0% 0%;
+    //background: #fff;
+}
+
+.tab-2-links li a {
+    margin:0px 3% 0px 2%;
+    float:left;   
+    font-family: Roboto;
+    font-size: 16px;
+    display: inline-block;
+    padding: 2% 0% 2% 0%;
+    text-decoration:none;
+    color: #7D7D7D;
+}
+
+.tab-2-links li a:hover {
+    background:#fff;
+    color: #5C5C5C;
+    border-bottom: 2px solid #FF6600; 
+    font-family: Roboto-Bold;
+}
+
+.tab-2-links li.active a,.tab-2-links li.active a:hover {
+    background:#fff;
+    color: #5C5C5C;
+    border-bottom: 2px solid #FF6600;
+    margin:0px 3% 0px 2%;
+    padding: 2% 0% 2% 0%;
+    font-family: Roboto-Bold;
+}
+
+/*
+    TAB - TYPE 3
+*/
+.tabs-3 {
+    width:100%;
+}
+
+.tab-3-links{
+    width: 308px;
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    display:inline-block;
+    float:left;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-3-links:after {
+    display:block;
+    clear:both;
+    content:'';
+
+}
+
+.tab-3-links li {
+    list-style:none; 
+    line-height: 22px;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 5px;
+}
+
+.tab-3-links li:before{
+    content: "\25B6";
+    margin: 4px 0px 0px -2px;
+    padding: 0px 0px 0px 0px;
+    font-size: 15px;
+    color: #BBBBBB;
+    display: inline-block;
+    float: left;
+    
+}
+
+.tab-3-links li:hover{
+    background: #FF6600;
+    color: #fff;
+}
+
+.tab-3-links li.active:before,.tab-3-links li.active{
+    //color:#fff;
+    background:#FF6600;
+    color: #fff;
+}
+
+
+.tab-3-links li a {
+    margin:0px 0px;
+    font-family: Roboto;
+    font-size: 14px;
+    display: inline-block;
+    padding: 1.5% 2% 1.5% 3%;
+    text-decoration:none;
+    color:#767676;
+    width:90%;
+}
+
+.tab-3-links li.active a{
+    color: #fff;
+    background: none;
+}
+
+.tab-3-links li a:hover {
+    color: #fff;
+}
+
+
+/*----- Content of Tabs -----*/
+.tab-3-content {
+    margin: -4% 0px 0px 0px;
+    padding:0px 0px 0px 2%;
+    border-radius:3px;
+    background:#fff;
+    font-family: Roboto;
+    width:68%;
+    display: inline-block;
+    float:left;
+    border-left: 1px solid #E1E1E1;
+}
+
+.tab-3-content h3{
+    margin:0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: inline-block;
+    color: #767676;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.tab-3-content div{
+    color: #8D8D8D;
+}
+
+.tab-3 {
+    display:none;
+    
+}
+
+.tab-3.active {
+    display:inline-block;
+    
+}
+.tab-3 div{
+    line-height: 20px;
+    font-size: 13px;
+}
+.tab-3 div{
+}
+/*---------------tailm---------------*/
+.tab-3-content {
+    border-left: none;
+    margin: 0px;
+}
+#support{
+    margin-top: 20px;
+}
+.support_title{
+    color: #ff6600;
+    font-family: Roboto-Bold;
+    font-size: 18px;
+    letter-spacing: 0.1px;
+    line-height: 40px;
+
+}

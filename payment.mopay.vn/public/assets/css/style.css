@@ -1,0 +1,1457 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 3, 2014, 2:05:46 PM
+    Author     : thanhhn
+*/
+@import url('reset.css');
+@import url('header.css');
+@import url('breadcumbs.css');
+@import url('tab.css');
+@import url("footer.css");
+@import url("sidebar.css");
+@import url("dropdown.css");
+
+body{
+    height: 100%;
+    background: #fff;
+    margin:auto;
+}
+
+@font-face{
+    font-family: Roboto;
+    src: url('../font/Roboto-Regular.ttf');
+}
+
+@font-face{
+    font-family: Roboto-Bold;
+    src: url('../font/Roboto-Bold.ttf');
+}
+
+p{
+    font-family: Roboto;
+    font-size:14px;
+
+}
+
+a {
+    text-decoration: none;
+}
+/*
+INDEX PAGE
+*/
+#front_banner{
+    width:100%;
+    height: 480px;
+    background: #0EC9FC url('../images/front_banner.jpg') no-repeat top center;
+    /*background-size: 100% 100%;*/
+    display:block;
+}
+
+#front_banner form{
+    margin:74px auto auto auto;
+    width: 250px;
+    height:330px;
+    float: right;
+    background: #fff;
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+}
+
+#front_banner form #mobo_id{
+    left:30%;
+    position: relative;
+    padding: 5% 0% 2% 0%;
+}
+
+#front_banner form .text{
+    margin: 5% 5% 2.5% 6%;
+    padding: 4% 2% 4% 2%;
+    width: 82%;
+    font-size: 14px;
+    font-family: Roboto;
+    border: 1px solid #dadada;
+}
+
+#front_banner form #remember{
+    margin: 2.5% 0% 0% 6%;
+
+    color: #989898;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    outline: none;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+
+#front_banner form span{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-family: Roboto;
+    color: #989898;
+    line-height: 30px;
+    border-right: 1px solid #A8A8A8;
+    margin: 0px 0px 0px 0px;
+}
+
+#front_banner form #forget_pass{
+    padding-left: 2%;
+    font-size: 14px;
+    font-family: Roboto;
+    color: #05BAFE;
+    line-height: 30px;
+}
+
+#front_banner form #login_btn{
+    margin: 0px 0px 0px 6%;
+    background: #05BAFE;
+    color: #fff;
+    width: 87%;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Roboto-Bold;
+    line-height: 30px;
+    border: none;
+    padding: 1% 0px 1% 0px;
+}
+
+#front_banner form #reg_btn{
+    margin: 2.5% 0px 0px 6%;
+    background: #fff;
+    color: #FF6600;
+    width: 87%;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Roboto-Bold;
+    line-height: 30px;
+    border: none;
+    padding: 1% 0px 1% 0px;
+}
+
+#front_banner form label{
+    padding-left: 6%;
+    padding-right: 1%;
+    font-size: 14px;
+    font-family: Roboto;
+    color: #989898;
+    line-height: 30px;
+
+}
+
+#front_banner form #fb_btn{
+    position:absolute;
+}
+
+
+#functions{
+    margin: 33px auto 45px auto;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+#functions img{
+    width: 333px;
+}
+#functions img:hover{
+    opacity: 0.8;
+}
+
+
+
+#news_question {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    border-bottom: 1px solid #DADADA;
+}
+
+#latest_news{
+    top:0;
+    margin: 0% 0% 0% 0%;
+    width: 49%;
+    display:inline-block;
+    position: relative;
+    height: 100%;
+    vertical-align: top;
+    padding-bottom: 2%;
+}
+
+.cate_title{
+    font-size:18px;
+    font-family: "Roboto-bold";
+    color: #5C5C5C; 
+    display: block;
+    padding-bottom: 20px;
+}
+
+#latest_news #first_news{
+    width:100%;
+    display: block;  
+    margin-bottom: 15px;
+}
+
+#latest_news #first_news #news_content{
+    width: 240px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+#latest_news #first_news #news_content p{
+    font-size: 14px;
+    font-family: Roboto;
+    color: #767676;
+    vertical-align: top;
+    line-height: 22px
+}
+
+#latest_news #first_news #news_content button{
+    font-size: 14px;
+    font-family: Roboto;
+    color:#05BAFE;
+    border-radius: 5px;
+    border:1px solid #E3E3E3;
+    padding: 6px 15px;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#latest_news #first_news #news_content button:hover{
+    opacity: 0.9;
+    color: #FF6600;
+}
+#latest_news #first_news #news_image{
+    margin: 3px 0% 0% 0%;
+    display:inline-block;
+    vertical-align: top;
+}
+
+#latest_news #secondary_news{
+    list-style:none; 
+}
+
+#latest_news #secondary_news li{
+    font-family: Roboto;
+    font-size:14px;
+    color:#767676;
+    padding: 5px 0px 0px 0px;
+    width: 100%;
+    background: url(../images/arrow_left.png) left no-repeat;
+    background-position: 0px 10px;
+    padding-left: 15px;
+    line-height: 22px;
+}
+
+
+#latest_news #secondary_news li:hover{
+
+    color: #FF6600;
+    cursor: pointer;
+    background: url(../images/arrow_left_hover.png) left no-repeat;
+    background-position: 0px 10px;
+    padding-left: 15px;
+
+}
+
+#QA{
+    margin: 0% 0% 0% 0%;
+    width: 47%; 
+    display: inline-block;
+    height: 100%;
+    padding-left: 20px;
+
+}
+
+
+#QA #question_list{
+    list-style:none; 
+    margin-bottom: 0px;
+}
+
+#QA #question_list li{
+    font-family: Roboto;
+    font-size:14px;
+    color:#767676;
+    padding: 0% 0 1% 0;
+    width: 100%;
+    display: block;
+    padding-bottom: 15px;
+    background: url(../images/arrow_left.png) left no-repeat;
+    background-position: 0px 3px;
+    padding-left: 15px;
+}
+
+
+
+#QA #question_list li:hover{
+    color: #FF6600;
+    cursor: pointer;  
+    background: url(../images/arrow_left_hover.png) left no-repeat;
+    background-position: 0px 3px;
+    padding-left: 15px;
+}
+
+
+#QA .button{
+    color: #fff;
+    background: #05BAFE;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 30px;
+    border:none;
+    margin: 0px 0px 0px 17px;
+    padding: 1px 13px 3px 13px;
+    cursor: pointer;
+}
+#QA .button:hover{
+    opacity: 0.9;
+}
+
+#payment_accept{
+    margin:0% 0% 0% 0%;
+    width:100%;
+    margin-top: 20px;
+}
+
+#payment_accept h3{
+    margin: -5px 0px 0px 0px;
+    font-family: arial;
+    font-size: 16px;
+    color: #6E6E6E;
+    padding-bottom: 2%;
+    line-height: 25px;
+    border-bottom: 1px solid #E6E6E6;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+#payment_accept #bank{
+    width:30%;
+    vertical-align: top;
+    position: relative;
+    display:inline-block;
+}
+
+#payment_accept #card{
+    width:30%;
+    margin: 0% 0% 0% 50px;
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+}
+
+#payment_accept #inapp{
+    width: 30%;
+    float: right;
+    margin: 0% 0% 0% 4%;
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+
+}
+
+#payment_accept #bank .pay_logo{
+    padding: 15px 17px 10px 0px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#payment_accept #card .pay_logo{
+    padding: 15px 36px 0px 5px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#payment_accept .inapp_logo{
+    padding: 5% 10% 7% 1%;
+    text-align: center;
+}
+
+
+
+#content{
+    margin: auto;
+    padding-bottom: 20px;
+    overflow: hidden;
+    width:1060px;
+}
+
+
+
+.generate{
+    background: url("../images/generate.png") no-repeat center center;
+    background-size: 100% 100%;
+    border:none;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    margin-left: -5px;
+    position: relative;
+    z-index: 10;
+}
+
+.page_title{
+    font-family: Roboto-Bold;
+    font-size:18px;
+    color: #5C5C5C;
+    line-height: 70px;
+    letter-spacing: 0.1px;
+}
+
+#mcoin{
+    width: 785px;
+    display: inline-block;
+}
+
+
+
+
+.form_title {
+    font-family: Roboto;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666666;
+    line-height: 60px;
+    border-bottom: 2px solid #FF6600;
+    display: inline;
+    padding-bottom: 1%;
+    position: relative;
+    top: 5px;
+}
+
+.exchange_rate{
+    font-family: Roboto;
+    font-size: 14px;
+    color: #585858;
+    line-height: 60px;
+    display: inline;
+    padding-bottom: 1%;
+    margin-left: 2%;
+}
+
+.card_element{
+    display:inline-block;
+    width: 20%;
+    padding-right: 4.5%;
+
+}
+
+.card_element img{
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    width:98%;
+    cursor: pointer;
+
+}
+
+.card_element .radio, .bank_element .radio{
+    margin-top: 5%;
+    -webkit-appearance: none;
+    /*-moz-appearance: none;*/
+    background-color: #fff;
+    border: 1px solid #DADADA;
+    padding: 7px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    left:42%;
+    outline:none;
+}
+
+.card_element .radio:checked:after, .bank_element .radio:checked:after {
+    content: ' ';
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background: #05BAFE;  
+    font-size: 32px;
+}
+.affter_radio{
+    content: ' ';
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background: #05BAFE;
+    font-size: 32px;
+}
+.card_element.active img{
+    border: 1px solid #05BAFE;
+}
+
+.bank_element{
+    display:inline-block;
+    width: 148px;
+    padding-right: 4.5%;
+    padding-bottom: 2%;
+}
+
+.bank_element img{
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    width: 152px;
+    height: 65px;
+    cursor: pointer;
+}
+
+/*.bank_element .radio{
+    margin-top: 5%;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #DADADA;
+    padding: 9px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    left:40%;
+    outline:none;
+}*/
+
+/*.bank_element .radio:checked:after {
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background: #05BAFE;  
+    font-size: 32px;
+}*/
+
+.bank_element.active img{
+    border: 1px solid #05BAFE;
+    width: 152px;
+    height: 65px;
+}
+
+.submit{
+    font-size: 14px;
+    color: #fff;
+    font-family: "Roboto";
+    border: none;
+    background: #05BAFE;
+    border-radius: 5px;
+    padding: 7px 20px 7px 20px;
+    cursor: pointer;
+    margin-left: 180px;
+}
+
+#card_value{
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+}
+
+#bank_value{
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+}
+
+#card_value tr th{
+    background: #EFEDED;
+}
+
+#bank_value tr th{
+    background: #EFEDED;
+}
+
+#card_value tr th,td{
+    border: 1px solid #DADADA;
+    font-family: Roboto;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    padding:2.5% 0% 2.5% 0%;
+    width: 50%;
+    color: #5B5B5B;
+    line-height: 30px;
+
+}
+
+#bank_value tr th,td{
+    border: 1px solid #DADADA;
+    font-family: Roboto;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    padding:2.5% 0% 2.5% 0%;
+    width: 50%;
+    color: #5B5B5B;
+    line-height: 30px;
+
+}
+
+#sms_value{
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0px 0px 0px 15%;
+    margin-top: 20px;
+
+}
+
+#sms_value tr th{
+    background: #EFEDED; 
+    padding: 4% 0% 4% 0%;
+}
+
+#sms_value th,td{
+    width: 30%;
+    border: 1px solid #DADADA;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #5B5B5B;
+}
+
+#sms_rules{
+    color: #323232;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#sms_formular{
+    width:100%;
+}
+
+
+/*
+    EXCHANGE PAGE
+*/
+
+#mcoin form{
+    padding:1% 0% 0% 2%;
+    position: relative;
+}
+#mcoin form label{
+    width:25%;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 40px;
+    color: #6F6F6F;
+    display: inline-block
+}
+
+#mcoin form .text{
+    margin: 0px 0px 3% 0%;
+    width: 50%;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 26px;
+    border: 1px solid #D3D3D3;
+    padding: 1% 2% 1% 2%;
+    display: inline;
+}
+
+#mcoin form #confirm{
+    display:inline;
+    width: 8%;
+    line-height: 26px;
+    text-align: center;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    font-style: italic;
+    color: #424242;
+    border: none;
+}
+
+#server_select{
+    margin: 0px 0px 3% 0%;
+    width: 54.5%;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 26px !important;
+    border: 1px solid #D3D3D3;
+    padding: 1% 2% 1% 2%;
+    display: inline;
+    position: relative;
+    background-size: 25px 25px !important;
+    color: #818181;
+    cursor: pointer;
+}
+
+#char_select{
+    margin: 0px 0px 3% 0%;
+    width: 54.5%;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 26px !important;
+    border: 1px solid #D3D3D3;
+    padding: 1% 2% 1% 2%;
+    display: inline;
+    position: relative;
+    background-size: 25px 25px !important;
+    color: #818181;
+    cursor: pointer;
+}
+
+
+/*#mcoin form .dr*/
+
+#note{
+    width:90%;
+    background: #FFF4D3;
+    margin: 10% 0% 5% 0%;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #E3D2A0;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #797979;
+    line-height: 25px;
+}
+
+/*
+ WALLET
+*/
+#mcoin #info{
+    border:1px solid #DADADA;
+}
+
+#mcoin #info h1{
+    background: #05BAFE;
+    color: #fff;
+    margin: 0px 0px 0px 0px;
+    padding: 1% 0% 1% 3%;
+    line-height: 30px;
+}
+
+#mcoin #info #avatar{
+    margin: 3% 0px 0px 3%;
+    border-radius: 5px;
+    border: 1px solid #DADADA;
+}
+
+#mcoin #info #account_info{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2% 0% 0% 2%;
+    padding-bottom: 25px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #05BAFE;
+}
+.history_submit{
+    float: right;
+    margin-top: -48px;
+    margin-right: 50px;
+}
+#mcoin #info #account_info label{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 30px; 
+    color: #6B6969;
+    width: 20%;
+    display: inline-block;
+}
+
+#mcoin #info #account_info label#account_name{
+    font-family: Roboto-Bold;
+    font-size: 18px;
+    width: 100%;
+}
+
+#mcoin #info #account_info label.value{
+    width:40%;
+}
+
+#mcoin #info #account_info img{
+    border-radius: 5px;
+    margin: 0px 0px -12px 0px;
+}
+#mcoin #info #account_info img:hover{
+    opacity: 0.9;
+}
+#mcoin #info #account_info .button{
+    font-size: 14px;
+    font-family: Roboto;
+    color:#05BAFE;
+    border-radius: 5px;
+    border:1px solid #E3E3E3;
+    padding: 2% 4% 2% 4%;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#mcoin #info #account_info .button:hover{
+    opacity: 0.9;
+    color: #FF6600;
+}
+#mcoin #transaction_history p{
+    color: #696969;
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 0;
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+#mcoin #transaction_history h1{
+    margin-top: 5px;
+}
+#mcoin #transaction_history form{
+    background:#EEEEEE;
+    /*padding: 2% 0% 0% 5%;*/
+    border: 1px solid #D3D3D3;
+    width: 735px;
+}
+
+#mcoin #transaction_history form .date{
+    margin: 0px 0px 15px 0px;
+    width: 25%;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid #D3D3D3;
+    padding: 3px 5px 3px 5px;
+    display: inline;
+    color: #818181;
+    background-image: url("../images/date_bg.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#mcoin #transaction_history #recharge_history{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#mcoin #transaction_history #recharge_history th,td{
+    padding: 1% 0px 1% 0px;
+    line-height: 30px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #818181;
+}
+
+#mcoin #transaction_history #recharge_history td.order{
+    width:6%;
+    border-left: none;
+}
+
+
+#mcoin #transaction_history #recharge_history td.type{
+    width:40%;
+}
+
+
+#mcoin #transaction_history #recharge_history td.time{
+    width:20%;
+}
+
+
+#mcoin #transaction_history #recharge_history td.money{
+    width:10%;
+    color: red;
+}
+
+#mcoin #transaction_history #recharge_history td.mcoin{
+    width:23%;
+    color: #53B33A;
+    border-right: none;
+}
+
+#mcoin #transaction_history #exchange_history{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#mcoin #transaction_history #exchange_history th,td{
+    padding: 1% 0px 1% 0px;
+    line-height: 30px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #818181;
+}
+
+#mcoin #transaction_history #exchange_history td.order{
+    width:6%;
+    border-left: none;
+}
+
+#mcoin #transaction_history #exchange_history td.time{
+    width:20%;
+}
+
+#mcoin #transaction_history #exchange_history td.character{
+    width:36%;
+}
+
+#mcoin #transaction_history #exchange_history td.money{
+    width:19%;
+    color: red;
+}
+
+#mcoin #transaction_history #exchange_history td.game_money{
+    width:19%;
+    color: #53B33A;
+    border-right: none;
+}
+
+#mcoin #transaction_history #exchange_history td span.not_available{
+    font-style: italic;
+    color: #D1D1D1;
+}
+
+#news_wrapper{
+    width:73%;
+    background: #fff;
+    margin: 0% 0% 0% 0%;
+    display: inline-block;
+    //border-right: 1px solid black;
+}
+
+#news_wrapper #top_news{
+    width:100%;
+    //border: 1px solid red;
+    position: relative;
+}
+
+#news_wrapper #top_news img{
+    width:100%;
+}
+
+
+
+#news_wrapper #top_news #background{
+    position: absolute;
+    bottom: 0%;
+    color: #fff;
+    opacity: 0.871;
+    height: 38%;
+    z-index: 60;
+    width:100%;
+    vertical-align: bottom;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,1));  //For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,1));  //For1 Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,1));  //For Firefox 3.6 to 15 
+    background: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,1)); //Standard syntax (must be last) 
+
+}
+
+#news_wrapper #top_news h4{
+    //border: 1px solid white;
+
+}
+
+#news_wrapper #top_news p{
+    //border: 1px solid white;
+
+}
+
+#news_wrapper .news_element{
+    border-bottom: 1px solid #EAEAEA;
+    margin: 0px 0px 0px 0px;
+    padding:4% 0px 4% 0px;
+    //border: 1px solid black;
+}
+
+#news_wrapper .news_element img{
+    width:29%;
+    height:100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#news_wrapper .news_element .news_content{
+    width:68%;
+    display: inline-block;
+    margin: 0px 0px 0px 0%;
+    padding: 0px 0px 0px 1.5%;
+    //border: 1px solid black;
+    vertical-align: top;
+    font-family: Roboto;
+}
+
+#news_wrapper .news_element .news_content h4{
+    margin:0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: block;
+    font-size: 16px;
+    color: #5E5E5E;
+}
+
+#news_wrapper .news_element .news_content h4 a{
+    text-decoration: none;
+    color: #5E5E5E;
+}
+
+#news_wrapper .news_element .news_content span.time-news{
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#news_wrapper .news_element .news_content p{
+    margin: 1% 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: inline-block;
+    font-size: 14px;
+    color: #656565;   
+    line-height: 18px;
+}
+
+#news_detail{
+    padding: 0% 0% 8% 0%;
+    border-bottom: 1px solid #E1E1E1;
+    position: relative;
+}
+
+#news_detail h3{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 0.1px;
+    color: #5E5E5E;
+    display: block;
+    margin-top: -20px;
+    font-weight: normal;
+}
+
+#news_detail span.info-title{
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+#news_detail #news_detail_content{
+    color: #656565;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+    padding: 13px 0px 0px 0px;
+    border-top: 1px solid #E8E8E8;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#news_detail #facebook{
+    float: right;
+    width:20%;
+    display: inline-block;
+    margin:0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+
+#news_detail #facebook #fb_like{
+    background: url("../images/facebook_like.png") no-repeat top left;
+    width:55px;
+    height:20px;
+    border: none;
+    background-size: 100% 100%;
+    margin:0% 0% 3.5% 0%;
+    vertical-align: bottom;
+    right: 10%;
+    cursor: pointer;
+}
+
+#news_detail #facebook #fb_likenum{
+    background: url("../images/facebook_like_icon.png") no-repeat center left;
+    background-size: 40% 70%;
+    padding: 2% 4% 2% 2%;
+    text-align: right;
+    background-color: #fff;
+    border:1px solid #9197A3;
+    font-family: Roboto;
+    font-size: 14px;
+    width:35%;
+    border-radius: 2px;
+    color: #6A7180;
+    right:0;
+}
+
+#other_news{
+
+}
+
+#other_news .news_link{
+    padding: 10px 0px;
+}
+
+#other_news .news_link img{
+    display: inline-block;
+
+}
+
+#other_news .news_link .news_link_content{
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    padding: 0% 0% 0% 1%;
+    vertical-align: top;
+}
+
+#other_news .news_link .news_link_content a{
+    text-decoration: none;
+}
+
+#other_news .news_link .news_link_content h4{
+    margin:0px 0px 0px 0px;
+    padding: 0% 0px 1% 0px;
+    font-family: Roboto;
+    font-size:16px;
+    color: #585858;
+    font-weight: normal;
+}
+
+#other_news .news_link .news_link_content span{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: Roboto;
+    font-size:12px;
+}
+.exchange-icon{
+    padding-left: 27px;
+    padding-right: 26px;
+}
+#bank ul{
+    display: block;
+    float: left;
+}
+#bank ul li{
+    float: left;
+    margin-right: 28px;
+}
+.mbank, .vib, .hdbank{
+    margin-left: 26px;
+}
+.mastercard{
+    margin-left: 45px;
+}
+
+#news_content bold{
+    color: #5F5E5E;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    display: block;
+
+}
+#news_content bold:hover {
+    color: #FF6600;
+}
+.hr{
+    width: 100%;
+    border-bottom: 1px solid #E8E8E8;
+}
+.action-form p{
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 14px;
+    color: #818181;
+}
+.captcha{
+    width: 80px;
+    position: relative;
+    top: 10px;
+}
+#sms h4{
+    color: #565656;margin:5px 0px 0px 0px;line-height: 40px;font-size: 16px;
+}
+.title-mg{
+    margin-top: 20px !important;
+}
+.space{
+    width: 100%;
+    height: 5px;
+}
+#sms{
+    padding-left: 1%;padding-right: 30px;
+}
+.loading-card{
+    position: absolute;
+    margin-top: -27px;
+    margin-left: 276px;
+}
+.loading-bank{
+    position: absolute;
+    margin-top: -27px;
+    margin-left: 295px;
+}
+.ajax-content{
+    display: block;
+    color: red;
+    margin: auto;
+    margin-left: 180px;
+    margin-bottom: 20px;
+}
+.slideContent a{
+    text-transform: none;
+    font-style: normal !important;
+}
+.alert_login{
+    margin: auto;
+    font-family: Roboto-Bold;
+    font-size: 18px;
+    color: #5C5C5C;
+    line-height: 55px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    height: 255px;
+}
+.alert_login button{
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #2691ce;
+    border: none;
+    width: 160px;
+    height: 47px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Roboto-Bold;
+}
+.alert_login button:hover, .content-popup button:hover{
+    opacity: 0.9;
+}
+.alert_login strong{
+    display: block;
+}
+.login-button{
+    background: #FF6700 !important;
+}
+.background_shadow{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.31);
+    z-index: 111;
+    display: none;
+}
+.popup{
+    width: 495px;
+    min-height: 200px;
+    background: #fff;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 7px;
+}
+.main-popup .header-popup{
+    height: 55px;
+    text-align: center;
+    display: block;
+    line-height: 57px;
+    font-size: 20px;
+    font-family: Roboto-Bold;
+    color: #636363;
+    background: url("../images/bg_popup.png");
+    border-radius: 7px 7px 0px 0px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.close{
+    background: url("../images/close.png");
+    width: 26px;
+    height: 26px;
+    float: right;
+    display: block;
+    margin-top: -41px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 454px;
+}
+
+.content-popup {
+    text-align: center;
+    font-family: Roboto;
+    color: #666666;
+    font-size: 16px;
+}
+.content-popup button{
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #05bafe;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Roboto-Bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+.title-1{
+    margin-top: 40px;
+}
+.title-1 span{
+    color: #ff7700;
+    font-size: 25px;
+}
+.content-popup .name{
+    font-family: Roboto-Bold;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.balance{
+    font-size: 13px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: #292929;
+}
+.balance span{
+    color: #ff7700;
+}
+.aws{
+    color: #787878;
+    font-size: 14px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 22px;
+    width: 143px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.hrr{
+    border: none;
+    border-bottom: 1px solid #D1D1D1;
+    display: block;
+    width: 68%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: -27px;
+}
+.sms_formular_detail{
+    width: 589px;
+    height: 62px;
+    background: #F60;
+    margin-left: 22px;
+    font-size: 17px;
+    line-height: 60px;
+    padding-left: 25px;
+    color: #fff;
+    font-family: Roboto-Bold;
+}
+#space_formular{
+    font-size: 12px;
+}
+.nu_7765{
+    display: block;
+    float: right;
+    margin-right: 35px;
+    font-size: 36px;
+    font-family: Roboto-Bold;
+}
+.formular{
+    width: 326px;
+    text-align: center;
+    font-size: 20px;
+}
+.send-detail{
+    float: right;
+    margin-top: -60px;
+}
+#sms_formular img{
+
+    margin-top: 11px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+.form_withdraw #circularG{
+    margin-left: 286px;
+}
+.text_alert{
+    margin-top: 50px;
+    font-size: 20px;   
+}
+.submit:hover{
+    opacity: 0.9;
+}
+.radio-card{
+    width: 12px;
+    height: 12px;
+    border: 1px solid  #BDBCBC;
+    border-radius: 50%;
+    margin-top: -58px;
+    position: relative;
+    float: right;
+    margin-right: 7px;
+}
+.radio-card span{
+    display: block;
+    width: 8px;
+    height: 8px;
+    /*background: #05BAFE;*/
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.radio-checked{
+    background: #05BAFE;
+}
+.step-2{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.space-ex{
+    width: 100%;
+    height: 7px;
+}
+.submit-bank{
+    margin-left: 0px;
+}
+.radio_bank{
+    margin-top: -63px;
+    float: right;
+    position: relative;
+    margin-right: 1px;
+}
+.tabs-bank{
+    border: 1px solid #E8E5E5;
+}
+.loading-banking{
+    width: 50px;
+    height: 100px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+.waitting{
+    display: block;
+    margin: auto;
+    width: 100px;
+    margin-top: -95px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F60;
+    margin-bottom: 100px;
+}
+.alert-fail{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.alert-title{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.toolbar_navbar_me .dropdown {
+    position: relative;
+    border: none;
+    line-height: 16px !important;
+}
+.exchange-loading {
+    top: -54px;
+    right: -305px;
+    margin-bottom: -25px;
+}

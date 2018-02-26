@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6757a0;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="process" class="cls-1" d="M5542,149a32,32,0,1,0,32,32A32,32,0,0,0,5542,149Zm0,44a1,1,0,0,1,0-2,10,10,0,1,0-10-10h4l-5,6-5-6h4A12,12,0,1,1,5542,193Z" transform="translate(-5510 -149)"/>
+</svg>
